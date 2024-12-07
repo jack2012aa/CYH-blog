@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Structures and Algorithms on CYH Blog</title>
+    <link>https://example.org/tags/data-structures-and-algorithms/</link>
+    <description>Recent content in Data Structures and Algorithms on CYH Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Dec 2024 17:19:48 -0500</lastBuildDate>
+    <atom:link href="https://example.org/tags/data-structures-and-algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[CS 5040 Data structures and algorithms Project 4] MemManager</title>
+      <link>https://example.org/posts/cs-5040/cs-5040-p4/</link>
+      <pubDate>Sat, 07 Dec 2024 17:19:48 -0500</pubDate>
+      <guid>https://example.org/posts/cs-5040/cs-5040-p4/</guid>
+      <description>&lt;h3 id=&#34;linkhttpsgithubcomjack2012aacs-5040-dsatreemainf24p4memmanager_hashtable&#34;&gt;&lt;a href=&#34;https://github.com/jack2012aa/CS-5040-DSA/tree/main/F24P4MemManager_HashTable&#34;&gt;Link&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;&#xA;&lt;p&gt;In this project, I write a memory manager that use the first-fit strategy to manage a memory pool. Other class can require memory from it and it will provide a handle for each request.&lt;/p&gt;&#xA;&lt;h2 id=&#34;implementation&#34;&gt;Implementation&lt;/h2&gt;&#xA;&lt;p&gt;Implement the first-fit strategy is easy: write a &lt;code&gt;DoublyLinkedList&lt;/code&gt; class (my &lt;code&gt;FreeBlockManager&lt;/code&gt;) storing free memory blocks. When handling an allocate request, the &lt;code&gt;MemoryManager&lt;/code&gt; find a space that is large enough from the linked-list, or extend if necessary, and cut the space based on the required size, then return the &lt;code&gt;Handle&lt;/code&gt; representing the memory position. Later on, other class can use the &lt;code&gt;Handle&lt;/code&gt; to get the content in the memory.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[CS 5040 Data structures and algorithms Project 3] ExternalSorting</title>
+      <link>https://example.org/posts/cs-5040/cs-5040-p3/</link>
+      <pubDate>Sat, 07 Dec 2024 17:18:58 -0500</pubDate>
+      <guid>https://example.org/posts/cs-5040/cs-5040-p3/</guid>
+      <description>&lt;h3 id=&#34;linkhttpsgithubcomjack2012aacs-5040-dsatreemainf24p3externalsorting&#34;&gt;&lt;a href=&#34;https://github.com/jack2012aa/CS-5040-DSA/tree/main/F24P3ExternalSorting&#34;&gt;Link&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;&#xA;&lt;p&gt;In this project, I wrote an external sorting algorithm. It takes a file containing {int value, float key} data, sorts them and put sorted data back to the file.&lt;/p&gt;&#xA;&lt;h2 id=&#34;implementation&#34;&gt;Implementation&lt;/h2&gt;&#xA;&lt;p&gt;In external sorting, decreasing number of read from the file system extremely increases the performance. Hence, I use the replacement selection algorithm and multi-way merging in this project.&lt;/p&gt;&#xA;&lt;h3 id=&#34;replacement-selection&#34;&gt;Replacement selection&lt;/h3&gt;&#xA;&lt;p&gt;In replacement selection, we try to sort the input into k sorted runs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[CS 5040 Data structures and algorithms Project 2] SemSearch</title>
+      <link>https://example.org/posts/cs-5040/cs-5040-p2/</link>
+      <pubDate>Sat, 07 Dec 2024 17:17:57 -0500</pubDate>
+      <guid>https://example.org/posts/cs-5040/cs-5040-p2/</guid>
+      <description>&lt;h3 id=&#34;linkhttpsgithubcomjack2012aacs-5040-dsatreemainf24p2semsearch&#34;&gt;&lt;a href=&#34;https://github.com/jack2012aa/CS-5040-DSA/tree/main/F24P2SemSearch&#34;&gt;Link&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;&#xA;&lt;p&gt;In this project, I wrote a simple database storing seminars information. User can insert/delete seminars and search by field and range, and print the structure of the database.&lt;/p&gt;&#xA;&lt;h2 id=&#34;implementation&#34;&gt;Implementation&lt;/h2&gt;&#xA;&lt;p&gt;Since the database must support search by range, I used a binary search tree to store &lt;code&gt;Seminar&lt;/code&gt; with a field as the key. To search by location, I also implemented a &lt;code&gt;BinTree&lt;/code&gt; class. After finishing these, the project is easy.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[CS 5040 Data structures and algorithms Project 1] SongDB</title>
+      <link>https://example.org/posts/cs-5040/cs-5040-p1/</link>
+      <pubDate>Sat, 07 Dec 2024 17:15:49 -0500</pubDate>
+      <guid>https://example.org/posts/cs-5040/cs-5040-p1/</guid>
+      <description>&lt;h3 id=&#34;linkhttpsgithubcomjack2012aacs-5040-dsatreemainf24p1songsdb_hashtable_adjlist_starter&#34;&gt;&lt;a href=&#34;https://github.com/jack2012aa/CS-5040-DSA/tree/main/F24P1SongsDB_HashTable_AdjList_Starter&#34;&gt;Link&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;&#xA;&lt;p&gt;In this project, I wrote a simple database storing artists and songs data. User can insert/remove artists and songs, and print artists and songs in the database as well as the structure of the database. By requirement, the database should only save artist&amp;rsquo;s name, song&amp;rsquo;s name, and a connection between artists and songs. Duplicate artists and songs are not allowed.&lt;/p&gt;&#xA;&lt;p&gt;While insert {artist-name}&lt;!-- raw HTML omitted --&gt;{song-name}, if the artist name and song-name exist in the database, then the database won&amp;rsquo;t create a new record, it creates a connection between the exist artist and song.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on CYH Blog</title>
-    <link>https://example.org/categories/</link>
+    <link>https://jack2012aa.github.io/CYH-blog/categories/</link>
     <description>Recent content in Categories on CYH Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Dec 2024 17:19:48 -0500</lastBuildDate>
-    <atom:link href="https://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jack2012aa.github.io/CYH-blog/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Courseworks</title>
-      <link>https://example.org/categories/courseworks/</link>
+      <link>https://jack2012aa.github.io/CYH-blog/categories/courseworks/</link>
       <pubDate>Sat, 07 Dec 2024 17:19:48 -0500</pubDate>
-      <guid>https://example.org/categories/courseworks/</guid>
+      <guid>https://jack2012aa.github.io/CYH-blog/categories/courseworks/</guid>
       <description></description>
     </item>
   </channel>

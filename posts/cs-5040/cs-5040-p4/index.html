@@ -48,7 +48,7 @@
   lang="en-us"
   dir="ltr"
 >
-  <head><script src="/CYH-blog/livereload.js?mindelay=10&amp;v=2&amp;port=57362&amp;path=CYH-blog/livereload" data-no-instant defer></script>
+  <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta
@@ -80,14 +80,14 @@ Implement the first-fit strategy is easy: write a DoublyLinkedList class (my Fre
   
   
   
-  <link rel="preload stylesheet" as="style" href="http://localhost:57362/CYH-blog/main.min.css" />
+  <link rel="preload stylesheet" as="style" href="https://jack2012aa.github.io/CYH-blog/main.min.css" />
 
   
   
   
   
   
-  <link rel="preload" as="image" href="http://localhost:57362/CYH-blog/theme.png" />
+  <link rel="preload" as="image" href="https://jack2012aa.github.io/CYH-blog/theme.png" />
 
   
   
@@ -100,7 +100,7 @@ Implement the first-fit strategy is easy: write a DoublyLinkedList class (my Fre
 
   
   
-  <link rel="preload" as="image" href="http://localhost:57362/CYH-blog/github.svg" />
+  <link rel="preload" as="image" href="https://jack2012aa.github.io/CYH-blog/github.svg" />
   
   
 
@@ -108,7 +108,7 @@ Implement the first-fit strategy is easy: write a DoublyLinkedList class (my Fre
   
   <script
     defer
-    src="http://localhost:57362/CYH-blog/highlight.min.js"
+    src="https://jack2012aa.github.io/CYH-blog/highlight.min.js"
     onload="hljs.initHighlightingOnLoad();"
   ></script>
   
@@ -120,11 +120,11 @@ Implement the first-fit strategy is easy: write a DoublyLinkedList class (my Fre
   
   <link
     rel="icon"
-    href="http://localhost:57362/CYH-blog/img/cloud.JPG"
+    href="https://jack2012aa.github.io/CYH-blog/img/cloud.JPG"
   />
   <link
     rel="apple-touch-icon"
-    href="http://localhost:57362/CYH-blog/apple-touch-icon.png"
+    href="https://jack2012aa.github.io/CYH-blog/apple-touch-icon.png"
   />
 
   
@@ -133,12 +133,50 @@ Implement the first-fit strategy is easy: write a DoublyLinkedList class (my Fre
   
   
   
+  
+  
+  
+  <meta itemprop="name" content="[CS 5040 Data structures and algorithms Project 4] MemManager">
+  <meta itemprop="description" content="Link Description In this project, I write a memory manager that use the first-fit strategy to manage a memory pool. Other class can require memory from it and it will provide a handle for each request.
+Implementation Implement the first-fit strategy is easy: write a DoublyLinkedList class (my FreeBlockManager) storing free memory blocks. When handling an allocate request, the MemoryManager find a space that is large enough from the linked-list, or extend if necessary, and cut the space based on the required size, then return the Handle representing the memory position. Later on, other class can use the Handle to get the content in the memory.">
+  <meta itemprop="datePublished" content="2024-12-07T17:19:48-05:00">
+  <meta itemprop="dateModified" content="2024-12-07T17:19:48-05:00">
+  <meta itemprop="wordCount" content="125">
+  <meta itemprop="keywords" content="Java,Data Structures and Algorithms">
+  
+  <meta property="og:url" content="https://jack2012aa.github.io/CYH-blog/posts/cs-5040/cs-5040-p4/">
+  <meta property="og:site_name" content="CYH Blog">
+  <meta property="og:title" content="[CS 5040 Data structures and algorithms Project 4] MemManager">
+  <meta property="og:description" content="Link Description In this project, I write a memory manager that use the first-fit strategy to manage a memory pool. Other class can require memory from it and it will provide a handle for each request.
+Implementation Implement the first-fit strategy is easy: write a DoublyLinkedList class (my FreeBlockManager) storing free memory blocks. When handling an allocate request, the MemoryManager find a space that is large enough from the linked-list, or extend if necessary, and cut the space based on the required size, then return the Handle representing the memory position. Later on, other class can use the Handle to get the content in the memory.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-07T17:19:48-05:00">
+    <meta property="article:modified_time" content="2024-12-07T17:19:48-05:00">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Data Structures and Algorithms">
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="[CS 5040 Data structures and algorithms Project 4] MemManager">
+  <meta name="twitter:description" content="Link Description In this project, I write a memory manager that use the first-fit strategy to manage a memory pool. Other class can require memory from it and it will provide a handle for each request.
+Implementation Implement the first-fit strategy is easy: write a DoublyLinkedList class (my FreeBlockManager) storing free memory blocks. When handling an allocate request, the MemoryManager find a space that is large enough from the linked-list, or extend if necessary, and cut the space based on the required size, then return the Handle representing the memory position. Later on, other class can use the Handle to get the content in the memory.">
+
+  
+  
+
+  
+  <link rel="canonical" href="https://jack2012aa.github.io/CYH-blog/posts/cs-5040/cs-5040-p4/" />
+  
+  
 </head>
 
   <body class="text-black duration-200 ease-out dark:text-white">
     <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
   <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
-    <a class="-translate-y-[1px] text-2xl font-medium" href="http://localhost:57362/CYH-blog/"
+    <a class="-translate-y-[1px] text-2xl font-medium" href="https://jack2012aa.github.io/CYH-blog/"
       >CYH Blog</a
     >
     <div
@@ -280,13 +318,13 @@ Implement the first-fit strategy is easy: write a DoublyLinkedList class (my Fre
      
     <a
       class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:57362/CYH-blog/tags/java"
+      href="https://jack2012aa.github.io/CYH-blog/tags/java"
       >Java</a
     >
      
     <a
       class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:57362/CYH-blog/tags/data-structures-and-algorithms"
+      href="https://jack2012aa.github.io/CYH-blog/tags/data-structures-and-algorithms"
       >Data structures and algorithms</a
     >
     
@@ -302,7 +340,7 @@ Implement the first-fit strategy is easy: write a DoublyLinkedList class (my Fre
   >
     
     
-    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href="http://localhost:57362/CYH-blog/posts/cs-5040/cs-5040-p3/"
+    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href="https://jack2012aa.github.io/CYH-blog/posts/cs-5040/cs-5040-p3/"
       ><span>[CS 5040 Data structures and algorithms Project 3] ExternalSorting</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
     >
     
@@ -331,7 +369,7 @@ Implement the first-fit strategy is easy: write a DoublyLinkedList class (my Fre
   <div class="mr-auto">
   
     &copy; 2024
-    <a class="link" href="http://localhost:57362/CYH-blog/">CYH Blog</a>
+    <a class="link" href="https://jack2012aa.github.io/CYH-blog/">CYH Blog</a>
   
   </div>
   <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"

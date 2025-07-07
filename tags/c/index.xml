@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C on CYH Blog</title><link>https://jack2012aa.github.io/CYH-blog/tags/c/</link><description>Recent content in C on CYH Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 07 Jul 2025 17:13:38 +0800</lastBuildDate><atom:link href="https://jack2012aa.github.io/CYH-blog/tags/c/index.xml" rel="self" type="application/rss+xml"/><item><title>[CS 5204 Operating Systems Project 1] Multi-thread Web Server</title><link>https://jack2012aa.github.io/CYH-blog/posts/cs-5204/cs-5204-p1/</link><pubDate>Mon, 07 Jul 2025 17:13:38 +0800</pubDate><guid>https://jack2012aa.github.io/CYH-blog/posts/cs-5204/cs-5204-p1/</guid><description>&lt;h3 id="linkhttpsgithubcomjack2012aacs5204-spring25-p1">&lt;a href="https://github.com/jack2012aa/CS5204-Spring25-P1">Link&lt;/a>&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C on CYH Blog</title><link>https://jack2012aa.github.io/CYH-blog/tags/c/</link><description>Recent content in C on CYH Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 07 Jul 2025 18:03:01 +0800</lastBuildDate><atom:link href="https://jack2012aa.github.io/CYH-blog/tags/c/index.xml" rel="self" type="application/rss+xml"/><item><title>[CS 5204 Operating Systems Project 2] XV6 File System Checker</title><link>https://jack2012aa.github.io/CYH-blog/posts/cs-5204/cs-5204-p2/</link><pubDate>Mon, 07 Jul 2025 18:03:01 +0800</pubDate><guid>https://jack2012aa.github.io/CYH-blog/posts/cs-5204/cs-5204-p2/</guid><description>&lt;h3 id="linkhttpsgithubcomjack2012aacs5204-spring25-p2">&lt;a href="https://github.com/jack2012aa/CS5204-Spring25-P2">Link&lt;/a>&lt;/h3>
+&lt;h2 id="what-it-does">What it does.&lt;/h2>
+&lt;p>&lt;code>xcheck&lt;/code> is a file system checker designed for the xv6 operating system. It checks 11 types of consistency:&lt;/p>
+&lt;ol>
+&lt;li>Superblock consistency.&lt;/li>
+&lt;li>Root directory existence.&lt;/li>
+&lt;li>Inode type.&lt;/li>
+&lt;li>Direct and indirect addresses validity.&lt;/li>
+&lt;li>Direct and indirect addresses reference counts.&lt;/li>
+&lt;li>Directory entries validity (existence of &amp;ldquo;.&amp;rdquo; and &amp;ldquo;..&amp;rdquo; entries).&lt;/li>
+&lt;li>Data bitmap consistency.&lt;/li>
+&lt;li>Files reference counts.&lt;/li>
+&lt;li>In-use inodes reference in directory entries.&lt;/li>
+&lt;li>Referred inode allocation state.&lt;/li>
+&lt;li>Directory reference counts.&lt;/li>
+&lt;/ol>
+&lt;h2 id="how-it-works">How it works&lt;/h2>
+&lt;h3 id="structure">Structure&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── fs.img &lt;span style="color:#75715e"># File system image for testing&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── Makefile &lt;span style="color:#75715e"># Makefile&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── README.md &lt;span style="color:#75715e"># Readme&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── src
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│   ├── bitmap.c &lt;span style="color:#75715e"># A flexible size bitmap class used to read / build fs bitmap.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│   ├── bitmap.h
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│   ├── check.c &lt;span style="color:#75715e"># The check function&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│   ├── check.h
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│   ├── test.c &lt;span style="color:#75715e"># A test for the check function&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│   └── xcheck.c &lt;span style="color:#75715e"># The main function&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└── xv6-riscv &lt;span style="color:#75715e"># xv6 source code&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="bitmap">Bitmap&lt;/h3>
+&lt;p>&lt;code>bitmap.h&lt;/code> defines a bitmap structure which is based on an array of unsigned integer. &lt;code>bitmap_init&lt;/code> takes an variable size and allocate memory for the array, and &lt;code>bitmap_set&lt;/code> tests and sets a specific bit in the bitmap.&lt;/p></description></item><item><title>[CS 5204 Operating Systems Project 1] Multi-thread Web Server</title><link>https://jack2012aa.github.io/CYH-blog/posts/cs-5204/cs-5204-p1/</link><pubDate>Mon, 07 Jul 2025 17:13:38 +0800</pubDate><guid>https://jack2012aa.github.io/CYH-blog/posts/cs-5204/cs-5204-p1/</guid><description>&lt;h3 id="linkhttpsgithubcomjack2012aacs5204-spring25-p1">&lt;a href="https://github.com/jack2012aa/CS5204-Spring25-P1">Link&lt;/a>&lt;/h3>
 &lt;h2 id="description">Description&lt;/h2>
 &lt;p>I implemented a simple Web server in this project. It listens to specific port for http requests. To increase throughput, it has to be multi-thread and obey Smallest File Scheduling as well as having some mechanism to avoid starvation.&lt;/p>
 &lt;h2 id="implementation">Implementation&lt;/h2>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Side Projects on CYH Blog</title>
+    <link>http://localhost:1313/CYH-blog/categories/side-projects/</link>
+    <description>Recent content in Side Projects on CYH Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Jul 2025 18:27:11 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/CYH-blog/categories/side-projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[SyntaxNext] Project Introduction</title>
+      <link>http://localhost:1313/CYH-blog/posts/syntaxnext/1-intro/</link>
+      <pubDate>Mon, 07 Jul 2025 18:27:11 +0800</pubDate>
+      <guid>http://localhost:1313/CYH-blog/posts/syntaxnext/1-intro/</guid>
+      <description>&lt;p&gt;Hi everyone. This is a new series about what I learned while developing our side project, SyntaxNext.&lt;/p&gt;&#xA;&lt;h1 id=&#34;what-syntaxnext-does&#34;&gt;What SyntaxNext Does&lt;/h1&gt;&#xA;&lt;p&gt;SyntaxNext is an AI-powered mock interview agent. It works as a Chrome extension, and users can choose any LeetCode problem. During the interview, the extension shows the stages and tasks that an interviewee should complete. The agent will describe the question, and users should tell the agent how they plan to solve the problem. Users can go to the next step only when the agent thinks they have finished the required tasks in the current step.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
